@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 100vh;
+    background: url(/assets/images/login_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+/* 头部logo */
+.title {
+    position: absolute;
+    top: 30px;
+    width: 1200px;
+    height: 50px;
+    /* background-color:red; */
+}
+
+/* 登录注册框 */
+.container {
+    background-color:rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #fff;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+.btn {
+    cursor: pointer;
+    width: 100%;
+    background-color:lightblue;
+    padding: 15px;
+    border: 0;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+.btn:active {
+    transform: scale(.98);
+}
+.container a {
+    text-decoration: none;
+    color: lightblue;
+    margin-left: 10px;
+}
+.text {
+    margin-top: 30px;
+}
+.form-control {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 40px;
+
+}
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+}
+.form-control .eye {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.form-control .icon-eye {
+    font-size: 20px;
+
+}
+.form-control .icon-eye-blocked {
+    font-size: 20px;
+}
+
+.form-control input:focus {
+    border-bottom-color: lightblue;
+}
+
+.form-control input:valid {
+    border-bottom-color: lightblue;
+}
+.form-control label {
+   position: absolute;
+   top: 10px;
+   left: 0;
+}
+.form-control label span {
+    font-size: 17px;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span {
+    transform: translateY(-30px);
+    color: lightblue;
+}
+.form-control input:focus + label span,
+.form-control input:valid +label span {
+    transform: translateY(-30px);
+    color: lightblue;
+}
+
+/* 默认注册框 */
+.reg-box {
+    display: none;
+}
