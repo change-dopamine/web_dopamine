@@ -34,7 +34,7 @@
         <div class="login-box">
             <form class="layui-form" id="form_login">
                 <div class="form-control">
-                    <input type="text" required autocomplete="off" lay-verify="required" name="username" />
+                    <input type="text" required autocomplete="off" lay-verify="required|username" name="username" />
                     <label>
                         <span style="transition-delay: 0ms;">请</span><span style="transition-delay: 40ms;">输</span><span
                             style="transition-delay: 80ms;">入</span><span style="transition-delay: 120ms;">用</span><span
@@ -42,7 +42,7 @@
                     </label>
                 </div>
                 <div class="form-control">
-                    <input type="password" required class="switch" lay-verify="required" name="password">
+                    <input type="password" required class="switch" lay-verify="required|pwd" name="password">
                     <label>
                         <span style="transition-delay: 0ms;">请</span><span style="transition-delay: 40ms;">输</span><span
                             style="transition-delay: 80ms;">入</span><span style="transition-delay: 120ms;">密</span><span
