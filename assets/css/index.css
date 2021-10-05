@@ -41,3 +41,6 @@ iframe {
     width: 40px;
     height: 40px;
 }
+.oldinfo {
+    display: none;
+}
